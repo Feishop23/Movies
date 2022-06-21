@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+body, h2, ul {
+margin: 0;
+}
+*{
+    color: rgb(0, 0, 0);
+}
+ul{
+padding-left: 0;
+list-style: none;
+}
+html{
+    background-color: #dadada;
+}
+.App{
+display: flex;
+text-align: center;     
+justify-content: center;
+flex-wrap: wrap;
+padding: 30px;
+}
+
+.card {
+margin: 1em;
+padding: 10px;
+background-color: white;
+color: white;
+border-top: 4px solid aquamarine;
+box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.236);
+width: 250PX;
+border-radius: 20px;
+font-family: 'Rubik', sans-serif;
+}
+.formForm{
+display: grid;
+grid-template-columns: repeat(4, 0.93fr);
+margin: 40px 1em;
+
+font-family: 'Rubik', sans-serif;
+
+
+}
+
+.formForm input{
+
+text-align: center;
+}
+.Submit{
+grid-column: 2/4;
+margin: 1em 4em;
+border: none;
+
+}
+.Btn_Init{
+height: 10px;
+width: 100%;
+margin: 1em 0px;
+border: none;
+}
+.Btn-Init{
+display: flex;
+margin: auto;
+border: none;
+}
+
+
+@media screen and (max-width:768px) {
+.formForm{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+height: 19em;
+margin: 0;
+width: 100%;
+
+}
+.Btn_Init{
+    display:inline;
+    height: 0px;
+position: relative;
+    margin: 10px 0px;
+    }
+.Submit{
+    position: relative;
+    margin: auto ;
+}
+.Name{   
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.Duration{
+    margin: auto;
+    
+    position: relative;
+}
+.Genre{
+    margin: auto;
+    position: relative;
+}
+.Date{
+    margin: auto;
+    position: relative;
+}
+.Btn-two button{
+margin: 0px 1em;
+
+}
+}
+@media screen and (min-width:1024px){
+.App{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 9em;
+}
+.formForm input{
+    margin: 0em 1em;
+}
+}
